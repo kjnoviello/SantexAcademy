@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
     <style>
+        /* global */
         .text{
             font-family: 'Inter', Arial, Helvetica, sans-serif;
         }
+        body {
+            margin: 0;
+        }
+        /* header */
         #header{
             border-bottom: 1px solid gray;
             display: flex;
@@ -19,18 +24,6 @@
             display: flex;
             align-items: center;
         }
-        .link-instagram{
-            padding-left: 33px;
-        }
-        .link-linkedin{
-            padding-left: 16px;
-        }
-        .link-instagram:hover .link-linkedin:hover{
-            fill: #6B53F0;
-        }
-        body {
-            margin: 0;
-        }
         p {
             margin-right: 40px;
             font-size: 13px;
@@ -40,20 +33,23 @@
         }
         p:hover{
             color: #6B53F0;
-
         }
-        h1 {
-            margin: 77px 424px 38px 424px;
-            text-align: center;
-            font-size: 28px;
-            line-height: 1.2;
+        .link-instagram{
+            padding-left: 33px;
         }
+        .link-linkedin{
+            padding-left: 16px;
+        }
+        .link-instagram:hover .link-linkedin:hover{
+            fill: #6B53F0;
+        }
+        /* button */
         .redondo {
             background-color: white;
             border: 2px solid black;
             border-radius: 24px;
-            padding: 0px 20px;
-            height: 36px;
+            padding: 0px 25px;
+            height: 37px;
         }
         .redondo:hover{
             transition: 0.2s;
@@ -63,7 +59,7 @@
         }
         .redondo2{
             color: #6B53F0;
-            margin-left: 14px;
+            margin-left: 18px;
             border-color: #6B53F0;
         }
         .redondo2:hover{
@@ -72,12 +68,20 @@
             background-color: #6B53F0;
             color: white;
         }
+        /* body */
+        h1 {
+            margin: 77px 424px 38px 424px;
+            text-align: center;
+            font-size: 28px;
+            line-height: 1.2;
+        }
         #introduction{
             padding: 0 80px;
         }
         div#introduction-actions {
             display: flex;
             justify-content: center;
+            margin-top: 25px;
         }
     </style>
 </head>
@@ -95,14 +99,13 @@
             <button class="redondo">Sumate +</button>
             <a href="https://www.instagram.com/technologywithpurpose/" class="link-instagram"><img src="https://img.icons8.com/fluency-systems-regular/15/null/instagram-new--v1.png" class="icon-instagram"/></a>
             <a href="https://www.linkedin.com/company/technologywithpurpose/" class="link-linkedin"><img src="https://img.icons8.com/windows/17/null/linkedin-2.png" class="icon-linkedin"/></a>
-            
         </div>
     </div>
     <div id="introduction">
         <div id="introduction-text">
             <h1 class="text">Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
+        <div id="introduction-actions">
             <button class="redondo">Contactanos -></button>
             <button class="redondo redondo2">Sumate +</button>
         </div>
