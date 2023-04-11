@@ -6,22 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
     <style>
+        .text{
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+        }
+        #header{
+            border-bottom: 1px solid gray;
+            display: flex;
+            padding: 18px 205px;
+            justify-content: space-between;
+        }
+        #header-right{
+            display: flex;
+            align-items: center;
+        }
+        .link-instagram{
+            padding-left: 33px;
+        }
+        .link-linkedin{
+            padding-left: 16px;
+        }
+        .link-instagram:hover .link-linkedin:hover{
+            fill: #6B53F0;
+        }
         body {
             margin: 0;
         }
         p {
             margin-right: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #201b24;
+            cursor: pointer;
+        }
+        p:hover{
+            color: #6B53F0;
+
         }
         h1 {
-            margin: 0px 400px;
+            margin: 77px 424px 38px 424px;
             text-align: center;
+            font-size: 28px;
+            line-height: 1.2;
         }
-        button.redondo {
+        .redondo {
             background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
+            border: 2px solid black;
+            border-radius: 24px;
             padding: 0px 20px;
-            height: 32px;
+            height: 36px;
+        }
+        .redondo:hover{
+            transition: 0.2s;
+            border-color: #201b24;
+            background-color: #201b24;
+            color: white;
+        }
+        .redondo2{
+            color: #6B53F0;
+            margin-left: 14px;
+            border-color: #6B53F0;
+        }
+        .redondo2:hover{
+            transition: 0.2s;
+            border-color: #6B53F0;
+            background-color: #6B53F0;
+            color: white;
+        }
+        #introduction{
+            padding: 0 80px;
         }
         div#introduction-actions {
             display: flex;
@@ -30,26 +82,29 @@
     </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header">
         <div id="header-left">
-            <img src="logo.svg">
+            <a href="https://technologywithpurpose.org/#"><img src="logo.svg" class="logo"></a>
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
+        <div id="header-right">
+            <p class="text">Nosotros</p>
+            <p class="text">Programas</p>
+            <p class="text">Capacitaciones</p>
+            <p class="text">Alianzas</p>
+            <p class="text">Contacto</p>
             <button class="redondo">Sumate +</button>
+            <a href="https://www.instagram.com/technologywithpurpose/" class="link-instagram"><img src="https://img.icons8.com/fluency-systems-regular/15/null/instagram-new--v1.png" class="icon-instagram"/></a>
+            <a href="https://www.linkedin.com/company/technologywithpurpose/" class="link-linkedin"><img src="https://img.icons8.com/windows/17/null/linkedin-2.png" class="icon-linkedin"/></a>
+            
         </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
+    <div id="introduction">
         <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+            <h1 class="text">Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
         <div id="introduction-actions" style="margin-top: 25px;">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo redondo2">Sumate +</button>
         </div>
     </div>
 </body>
