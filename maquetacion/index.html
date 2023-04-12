@@ -5,102 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        /* global */
-        .text{
-            font-family: 'Inter', Arial, Helvetica, sans-serif;
-        }
-        body {
-            margin: 0;
-        }
-        /* header */
-        #header{
-            border-bottom: 1px solid gray;
-            display: flex;
-            padding: 18px 205px;
-            justify-content: space-between;
-        }
-        #header-right{
-            display: flex;
-            align-items: center;
-        }
-        p {
-            margin-right: 40px;
-            font-size: 13px;
-            font-weight: 500;
-            color: #201b24;
-            cursor: pointer;
-        }
-        p:hover{
-            color: #6B53F0;
-        }
-        .link-instagram{
-            padding-left: 33px;
-        }
-        .link-linkedin{
-            padding-left: 16px;
-        }
-        .link-instagram:hover .link-linkedin:hover{
-            fill: #6B53F0;
-        }
-        /* button */
-        .redondo {
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 24px;
-            padding: 0px 25px;
-            height: 37px;
-        }
-        .redondo:hover{
-            transition: 0.2s;
-            border-color: #201b24;
-            background-color: #201b24;
-            color: white;
-        }
-        .redondo2{
-            color: #6B53F0;
-            margin-left: 18px;
-            border-color: #6B53F0;
-        }
-        .redondo2:hover{
-            transition: 0.2s;
-            border-color: #6B53F0;
-            background-color: #6B53F0;
-            color: white;
-        }
-        /* body */
-        h1 {
-            margin: 77px 424px 38px 424px;
-            text-align: center;
-            font-size: 28px;
-            line-height: 1.2;
-        }
-        #introduction{
-            padding: 0 80px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-            margin-top: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="header">
-        <div id="header-left">
-            <a href="https://technologywithpurpose.org/#"><img src="logo.svg" class="logo"></a>
-        </div>
-        <div id="header-right">
-            <p class="text">Nosotros</p>
-            <p class="text">Programas</p>
-            <p class="text">Capacitaciones</p>
-            <p class="text">Alianzas</p>
-            <p class="text">Contacto</p>
-            <button class="redondo">Sumate +</button>
-            <a href="https://www.instagram.com/technologywithpurpose/" class="link-instagram"><img src="https://img.icons8.com/fluency-systems-regular/15/null/instagram-new--v1.png" class="icon-instagram"/></a>
-            <a href="https://www.linkedin.com/company/technologywithpurpose/" class="link-linkedin"><img src="https://img.icons8.com/windows/17/null/linkedin-2.png" class="icon-linkedin"/></a>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <a href="https://technologywithpurpose.org/"><img src="logo.svg" alt="logo de la fundacion"></a>
+            <ul>
+                <li><a href="https://technologywithpurpose.org/nosotros/">Nosotros</a></li>
+                <li><a href="https://technologywithpurpose.org/#">Programas</a></li>
+                <li><a href="https://technologywithpurpose.org/#">Capacitaciones</a></li>
+                <li><a href="https://technologywithpurpose.org/#alianzas">Alianzas</a></li>
+                <li><a href="https://technologywithpurpose.org/contacto/">Contacto</a></li>
+                <button class="header-btn anchor"><a href="https://donaronline.org/technology-with-purpose-foudation/sumate-genera-impacto"></a>Sumate +</button>
+                <div class="header-icon">
+                    <a href="https://www.instagram.com/technologywithpurpose/"><img src="https://img.icons8.com/metro/12/null/instagram-new.png"/></a>
+                    <a href="https://www.linkedin.com/company/technologywithpurpose/" class="header-icon-linkedin"><img src="https://img.icons8.com/ios-glyphs/15/null/linkedin-2--v1.png"/></a>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+    </header>
     <div id="introduction">
         <div id="introduction-text">
             <h1 class="text">Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>

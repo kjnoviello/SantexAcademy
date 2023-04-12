@@ -1,0 +1,114 @@
+/* global */
+:root{
+    --main-font: 'Inter', Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+}
+/* header */
+#header{
+    border-bottom: 1px solid gray;
+    display: flex;
+    padding: 18px 205px;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 3px 15px 0 5px;
+}
+nav a{
+    display: flex;
+    align-self: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.3em;
+    margin-top: 20px;
+    padding: 0 0 2px 0;
+    margin: 20px 0 10px 0;
+}
+li a, .anchor{
+    text-decoration: none;
+    color: #201b24;
+    font-family: var(--main-font);
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: normal;
+}
+li a:hover{
+    color: #6B53F0;
+    transition: 0.2s;
+}
+.anchor:hover{
+    color: white;
+}
+.header-btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 0px 20px;
+    height: 2.8em;
+    cursor: pointer;
+}
+.header-btn:hover{
+    transition: 0.2s;
+    border-color: #201b24;
+    background-color: #201b24;
+    color: white;
+}
+.header-icon{
+    display: flex;
+}
+.header-icon-linkedin{
+    margin-left: 1em;
+}
+
+/* button */
+.redondo {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 0px 25px;
+    height: 37px;
+    font-family: var(--main-font);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.redondo:hover{
+    transition: 0.2s;
+    border-color: #201b24;
+    background-color: #201b24;
+    color: white;
+}
+.redondo2{
+    color: #6B53F0;
+    margin-left: 18px;
+    border-color: #6B53F0;
+}
+.redondo2:hover{
+    transition: 0.2s;
+    border-color: #6B53F0;
+    background-color: #6B53F0;
+    color: white;
+}
+/* body */
+h1 {
+    margin: 77px 438px 38px 424px;
+    text-align: center;
+    font-size: 1.74em;
+    line-height: 1.2;
+    font-family: var(--main-font);
+}
+#introduction{
+    padding: 0 80px;
+}
+div#introduction-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
